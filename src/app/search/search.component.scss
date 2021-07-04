@@ -7,21 +7,19 @@
     border: 1px solid;
     .searchTerm {
         font-family: 'poppins';
-        // width: 100%;
         border: 3px solid #00B4CC;
         border-right: none;
         padding: 5px;
-        height: 20px;
+        height: 1.5rem;
         border-radius: 5px 0 0 5px;
         outline: none;
-        color: #9DBFAF;
     }
     .searchTerm:focus {
         color: #00B4CC;
     }
     .searchButton {
-        width: 40px;
-        height: 36px;
+        width: 3rem;
+        height: 2.5rem;
         border: 1px solid #00B4CC;
         background: #00B4CC;
         text-align: center;
