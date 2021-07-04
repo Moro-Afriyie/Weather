@@ -1,4 +1,4 @@
-$backgroundColor:#00B4CC;
+$backGroundColor:#00B4CC;
 $blackColor: #000000;
 .search {
     position: relative;
@@ -6,11 +6,15 @@ $blackColor: #000000;
     font-family: "poppins";
     justify-content: center;
     padding: 0.5rem;
-    border: 1px solid;
+    box-shadow: 0px 3px 5px 0px rgba(0, 0, 0, 0.4);
+    // box-shadow: 0 3px 5px -1px rgba(0, 0, 0, 0.2), 0 6px 10px 0 rgba(0, 0, 0, 0.14), 0 1px 18px 0 rgba(0, 0, 0, 0.12);
+    background: linear-gradient(118deg, rgba(148, 187, 233, 1) 49%, rgba(238, 174, 202, 1) 100%);
+    // background: linear-gradient(118deg, rgba(238, 174, 202, 1) 0%, rgba(148, 187, 233, 1) 100%);
     .searchTerm {
+        box-shadow: 0 3px 5px -1px rgba(0, 0, 0, 0.2), 0 6px 10px 0 rgba(0, 0, 0, 0.14), 0 1px 18px 0 rgba(0, 0, 0, 0.12);
         width: 30vw;
         font-family: 'poppins';
-        border: 3px solid $backgroundColor;
+        border: 3px solid $blackColor;
         border-right: none;
         padding: 5px;
         height: 1.5rem;
@@ -24,12 +28,13 @@ $blackColor: #000000;
     .searchButton {
         width: 3rem;
         height: 2.5rem;
-        border: 1px solid $backgroundColor;
-        background: $backgroundColor;
+        border: 1px solid $blackColor;
+        background: $blackColor;
         text-align: center;
         color: #fff;
         border-radius: 0 5px 5px 0;
         cursor: pointer;
         font-size: 20px;
+        box-shadow: 0 3px 5px -1px rgba(0, 0, 0, 0.2), 0 6px 10px 0 rgba(0, 0, 0, 0.14), 0 1px 18px 0 rgba(0, 0, 0, 0.12);
     }
 }
