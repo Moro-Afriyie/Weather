@@ -1,27 +1,31 @@
+$backgroundColor:#00B4CC;
+$blackColor: #000000;
 .search {
     position: relative;
     display: flex;
     font-family: "poppins";
     justify-content: center;
-    padding: 10px;
+    padding: 0.5rem;
     border: 1px solid;
     .searchTerm {
+        width: 30%;
         font-family: 'poppins';
-        border: 3px solid #00B4CC;
+        border: 3px solid $blackColor;
         border-right: none;
         padding: 5px;
         height: 1.5rem;
         border-radius: 5px 0 0 5px;
         outline: none;
+        font-size: 1rem;
     }
     .searchTerm:focus {
-        color: #00B4CC;
+        color: $blackColor;
     }
     .searchButton {
         width: 3rem;
         height: 2.5rem;
-        border: 1px solid #00B4CC;
-        background: #00B4CC;
+        border: 1px solid $blackColor;
+        background: $blackColor;
         text-align: center;
         color: #fff;
         border-radius: 0 5px 5px 0;
