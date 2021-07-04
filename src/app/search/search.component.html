@@ -1,8 +1,6 @@
-<div class="search-container">
-    <form class="search" #searchForm="ngForm" (ngSubmit)="onSubmit(searchForm.value)">
-        <input type="text" class="searchTerm" placeholder="Enter your location" name="location" ngModel>
-        <button type="submit" class="searchButton">
+<form class="search" #searchForm="ngForm" (ngSubmit)="onSubmit(searchForm.value)">
+    <input type="text" class="searchTerm" placeholder="Enter your location" name="location" ngModel>
+    <button type="submit" class="searchButton">
       <i class="fa fa-search"></i>
    </button>
-    </form>
-</div>
+</form>
