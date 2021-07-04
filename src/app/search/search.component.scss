@@ -10,7 +10,7 @@ $blackColor: #000000;
     .searchTerm {
         width: 30%;
         font-family: 'poppins';
-        border: 3px solid $blackColor;
+        border: 3px solid $backgroundColor;
         border-right: none;
         padding: 5px;
         height: 1.5rem;
@@ -24,8 +24,8 @@ $blackColor: #000000;
     .searchButton {
         width: 3rem;
         height: 2.5rem;
-        border: 1px solid $blackColor;
-        background: $blackColor;
+        border: 1px solid $backgroundColor;
+        background: $backgroundColor;
         text-align: center;
         color: #fff;
         border-radius: 0 5px 5px 0;
