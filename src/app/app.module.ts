@@ -7,6 +7,7 @@ import { MainpageComponent } from './mainpage/mainpage.component';
 import { WeatherDetailsPageComponent } from './weather-details-page/weather-details-page.component';
 import { WeekWeatherForecastCardComponent } from './week-weather-forecast-card/week-weather-forecast-card.component';
 import { WeatherChartCardComponent } from './weather-chart-card/weather-chart-card.component';
+import { SearchComponent } from './search/search.component';
 
 @NgModule({
   declarations: [
@@ -14,7 +15,8 @@ import { WeatherChartCardComponent } from './weather-chart-card/weather-chart-ca
     MainpageComponent,
     WeatherDetailsPageComponent,
     WeekWeatherForecastCardComponent,
-    WeatherChartCardComponent
+    WeatherChartCardComponent,
+    SearchComponent
   ],
   imports: [
     BrowserModule,
