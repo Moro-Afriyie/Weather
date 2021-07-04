@@ -8,6 +8,7 @@ import { WeatherDetailsPageComponent } from './weather-details-page/weather-deta
 import { WeekWeatherForecastCardComponent } from './week-weather-forecast-card/week-weather-forecast-card.component';
 import { WeatherChartCardComponent } from './weather-chart-card/weather-chart-card.component';
 import { SearchComponent } from './search/search.component';
+import { FormsModule } from '@angular/forms';
 
 @NgModule({
   declarations: [
@@ -20,7 +21,8 @@ import { SearchComponent } from './search/search.component';
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    FormsModule,
   ],
   providers: [],
   bootstrap: [AppComponent]
