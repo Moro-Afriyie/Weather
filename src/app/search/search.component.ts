@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { FormGroup } from '@angular/forms';
 
 @Component({
   selector: 'app-search',
@@ -12,4 +13,7 @@ export class SearchComponent implements OnInit {
   ngOnInit(): void {
   }
 
+  onSubmit(form: FormGroup){
+    console.log(form);
+  }
 }
