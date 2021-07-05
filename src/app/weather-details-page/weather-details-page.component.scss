@@ -1,0 +1,10 @@
+.weather-container {
+    border-top: 1px solid rgba(225, 225, 225, 0.5);
+    border-left: 1px solid rgba(225, 225, 225, 0.3);
+    border-right: 1px solid rgba(225, 225, 225, 0.3);
+    border-bottom: 1px solid rgba(225, 225, 225, 0.2);
+    backdrop-filter: blur(4px);
+    // box-shadow: -1px 0px 30px 0px rgba(0, 0, 0, 0.2);
+    margin: 1rem 1.5rem;
+    border: 1px solid black;
+}
