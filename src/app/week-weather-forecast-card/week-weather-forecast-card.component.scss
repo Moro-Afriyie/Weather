@@ -1,9 +1,7 @@
 .container {
-    // display: flex;
     gap: 1rem;
     padding: 1rem;
     display: grid;
-    grid-auto-flow: column;
     grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
     .card {
         border: 1px solid red;
@@ -11,7 +9,6 @@
         flex-direction: column;
         align-items: center;
         justify-content: center;
-        // padding: 2rem;
         img {
             width: 5rem;
         }

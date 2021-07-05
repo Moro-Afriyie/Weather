@@ -1,10 +1,16 @@
 /* You can add global styles to this file, and also import other style files */
-@import url('https://fonts.googleapis.com/css2?family=Poppins');
 
+@import url('https://fonts.googleapis.com/css2?family=Poppins');
 html,
 body {
-    height: 100%;
+    height: auto;
     font-family: 'Poppins', sans-serif;
+}
+
+body {
+    background-size: cover;
+    background-position: center;
+    //background-repeat: no-repeat;
 }
 
 * {
