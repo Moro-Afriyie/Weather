@@ -24,16 +24,20 @@
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     grid-template-rows: repeat(2, 1fr);
+    grid-template-areas: "temperature chart" "weekChart weekChart";
 }
 
 app-temperature-details-card {
     border: 1px solid green;
+    grid-area: temperature;
 }
 
 app-weather-chart-card {
     border: 1px solid blue;
+    grid-area: chart;
 }
 
 app-week-weather-forecast-card {
     border: 1px solid yellow;
+    grid-area: weekChart;
 }
