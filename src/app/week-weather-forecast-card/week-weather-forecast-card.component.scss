@@ -5,8 +5,9 @@
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
     .card {
-        border: 1px solid red;
         display: flex;
+        gap: 0.5rem;
+        padding: 0.5rem 0rem;
         flex-direction: column;
         align-items: center;
         justify-content: center;
