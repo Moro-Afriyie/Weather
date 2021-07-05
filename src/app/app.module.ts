@@ -9,6 +9,7 @@ import { WeekWeatherForecastCardComponent } from './week-weather-forecast-card/w
 import { WeatherChartCardComponent } from './weather-chart-card/weather-chart-card.component';
 import { SearchComponent } from './search/search.component';
 import { FormsModule } from '@angular/forms';
+import { TemperatureDetailsCardComponent } from './temperature-details-card/temperature-details-card.component';
 
 @NgModule({
   declarations: [
@@ -17,7 +18,8 @@ import { FormsModule } from '@angular/forms';
     WeatherDetailsPageComponent,
     WeekWeatherForecastCardComponent,
     WeatherChartCardComponent,
-    SearchComponent
+    SearchComponent,
+    TemperatureDetailsCardComponent
   ],
   imports: [
     BrowserModule,
