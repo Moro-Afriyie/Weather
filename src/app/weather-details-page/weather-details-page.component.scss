@@ -32,13 +32,13 @@
 app-temperature-details-card {
     border: 1px solid green;
     grid-area: temperature;
-    @include glyphicon();
+    // @include glyphicon();
 }
 
 app-weather-chart-card {
     border: 1px solid blue;
     grid-area: chart;
-    @include glyphicon();
+    // @include glyphicon();
 }
 
 app-week-weather-forecast-card {
