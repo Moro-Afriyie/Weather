@@ -1,0 +1,17 @@
+.container {
+    display: flex;
+    gap: 1rem;
+    width: 100%;
+    padding: 2rem;
+    .card {
+        border: 1px solid red;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        padding: 2rem;
+        img {
+            width: 5rem;
+        }
+    }
+}
