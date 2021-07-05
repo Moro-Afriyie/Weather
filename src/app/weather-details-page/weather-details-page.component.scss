@@ -6,7 +6,6 @@
     backdrop-filter: blur(4px);
     // box-shadow: -1px 0px 30px 0px rgba(0, 0, 0, 0.2);
     margin: 1rem 1.5rem;
-    border: 1px solid black;
     display: flex;
     flex-direction: column;
     gap: 1rem;
@@ -22,6 +21,7 @@
 .weather-details {
     border: 1px solid red;
     flex-grow: 1;
+    display: grid;
 }
 
 app-temperature-details-card {
