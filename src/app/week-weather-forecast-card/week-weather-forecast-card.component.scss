@@ -6,8 +6,9 @@
     grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
     .card {
         display: flex;
-        gap: 0.5rem;
-        padding: 0.5rem 0rem;
+        gap: 0.7rem;
+        border-radius: 5px;
+        padding: 1rem 0rem;
         flex-direction: column;
         align-items: center;
         justify-content: center;
