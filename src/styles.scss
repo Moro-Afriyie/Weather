@@ -3,8 +3,12 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins');
 html,
 body {
-    height: auto;
-    font-family: 'Poppins', sans-serif;
+    height: 100vh;
+    @media screen and (max-width: 910px) {
+        height: auto;
+    }
+    font-family: 'Poppins',
+    sans-serif;
 }
 
 body {

@@ -11,6 +11,7 @@
         align-items: center;
         justify-content: center;
         @include glyphicon();
+        box-shadow: -1px 0px 30px 0px rgba(0, 0, 0, 0.15);
         img {
             width: 5rem;
         }
