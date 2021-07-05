@@ -18,7 +18,7 @@ $blackColor: #000000;
     // box-shadow: 0 3px 5px -1px rgba(0, 0, 0, 0.2), 0 6px 10px 0 rgba(0, 0, 0, 0.14), 0 1px 18px 0 rgba(0, 0, 0, 0.12);
     //background: linear-gradient(118deg, rgba(148, 187, 233, 1) 49%, rgba(238, 174, 202, 1) 100%);
     .searchTerm {
-        box-shadow: 0 3px 5px -1px rgba(0, 0, 0, 0.2), 0 6px 10px 0 rgba(0, 0, 0, 0.14), 0 1px 18px 0 rgba(0, 0, 0, 0.12);
+        // box-shadow: 0 3px 5px -1px rgba(0, 0, 0, 0.2), 0 6px 10px 0 rgba(0, 0, 0, 0.14), 0 1px 18px 0 rgba(0, 0, 0, 0.12);
         width: 30vw;
         font-family: 'poppins';
         border: 3px solid $blackColor;
@@ -42,6 +42,6 @@ $blackColor: #000000;
         border-radius: 0 5px 5px 0;
         cursor: pointer;
         font-size: 20px;
-        box-shadow: 0 3px 5px -1px rgba(0, 0, 0, 0.2), 0 6px 10px 0 rgba(0, 0, 0, 0.14), 0 1px 18px 0 rgba(0, 0, 0, 0.12);
+        // box-shadow: 0 3px 5px -1px rgba(0, 0, 0, 0.2), 0 6px 10px 0 rgba(0, 0, 0, 0.14), 0 1px 18px 0 rgba(0, 0, 0, 0.12);
     }
 }
