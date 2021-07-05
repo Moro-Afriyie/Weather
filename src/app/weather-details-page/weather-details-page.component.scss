@@ -8,3 +8,10 @@
     margin: 1rem 1.5rem;
     border: 1px solid black;
 }
+
+.weather-heading {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
