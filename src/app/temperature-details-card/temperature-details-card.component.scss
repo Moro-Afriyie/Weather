@@ -1,19 +1,17 @@
-@import '../../baseComponents/base.scss';
 .temperature-container {
     padding: 1rem;
-    // @include glyphicon();
     .temperature-state {
         display: flex;
         flex-direction: column;
-        gap: 1rem;
+        align-items: center;
     }
     .temperature {
         display: flex;
         img {
-            width: 13rem;
+            width: 11rem;
         }
         h1 {
-            font-size: 8rem;
+            font-size: 6rem;
             font-family: cursive;
         }
     }
