@@ -27,7 +27,8 @@
     flex-grow: 1;
     display: grid;
     grid-template-columns: repeat(2, 1fr);
-    grid-template-rows: repeat(2, 1fr);
+    // grid-template-rows: repeat(2, 1fr);
+    grid-template-rows: 2fr 1fr;
     gap: 2rem;
     grid-template-areas: "temperature chart" "weekChart weekChart";
 }
