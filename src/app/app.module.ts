@@ -10,7 +10,8 @@ import { WeatherChartCardComponent } from './weather-chart-card/weather-chart-ca
 import { SearchComponent } from './search/search.component';
 import { FormsModule } from '@angular/forms';
 import { TemperatureDetailsCardComponent } from './temperature-details-card/temperature-details-card.component';
-
+import { HttpClientModule, HTTP_INTERCEPTORS } from '@angular/common/http';
+import { LoaderInterceptor } from 'src/interceptors/loading.interceptor';
 @NgModule({
   declarations: [
     AppComponent,
@@ -26,7 +27,7 @@ import { TemperatureDetailsCardComponent } from './temperature-details-card/temp
     AppRoutingModule,
     FormsModule,
   ],
-  providers: [],
+  providers: [{ provide: HTTP_INTERCEPTORS, useClass: LoaderInterceptor, multi: true }],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
