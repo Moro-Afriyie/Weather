@@ -11,6 +11,11 @@ export class MainpageComponent implements OnInit {
   constructor( private loaderService:LoaderService,) { }
 
   ngOnInit(): void {
+    setTimeout(()=>{
+      this.loaderService.setHttpProgressStatus(true);
+    } ,500);
+
+    this.loaderService.setHttpProgressStatus(false)
   }
 
 }
