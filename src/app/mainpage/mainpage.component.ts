@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { LoaderService } from 'src/interceptors/loader.service';
 
 @Component({
   selector: 'app-mainpage',
@@ -7,7 +8,7 @@ import { Component, OnInit } from '@angular/core';
 })
 export class MainpageComponent implements OnInit {
 
-  constructor() { }
+  constructor( private loaderService:LoaderService,) { }
 
   ngOnInit(): void {
   }
