@@ -1,10 +1,12 @@
 .temperature-container {
     padding: 1rem;
-    img {
-        width: 15rem;
-    }
-    h1 {
-        font-size: 8rem;
-        font-family: cursive;
+    .temperature {
+        img {
+            width: 15rem;
+        }
+        h1 {
+            font-size: 8rem;
+            font-family: cursive;
+        }
     }
 }
