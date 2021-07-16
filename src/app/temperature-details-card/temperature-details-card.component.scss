@@ -6,6 +6,14 @@
     .value {
         font-size: 1.2rem;
     }
+    @media screen and (max-width: 400px) {
+        .title {
+            font-size: 1.2rem;
+        }
+        .value {
+            font-size: 1.1rem;
+        }
+    }
 }
 
 .temperature-container {
