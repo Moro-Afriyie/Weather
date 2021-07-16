@@ -25,6 +25,14 @@
             font-size: 6rem;
             font-family: cursive;
         }
+        @media screen and (max-width: 400px) {
+            img {
+                width: 6rem;
+            }
+            h1 {
+                font-size: 3rem;
+            }
+        }
     }
     h2 {
         text-align: center;
