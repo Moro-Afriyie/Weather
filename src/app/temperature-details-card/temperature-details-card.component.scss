@@ -1,3 +1,13 @@
+@mixin text {
+    .title {
+        font-size: 1.3rem;
+        font-weight: 600;
+    }
+    .value {
+        font-size: 1.2rem;
+    }
+}
+
 .temperature-container {
     padding: 1rem;
     .temperature-state {
@@ -21,8 +31,17 @@
         font-size: 2rem;
     }
     .temperature__definition {
-        flex-grow: 1;
-        margin: 1rem 1rem;
+        border: 1px solid;
+        display: flex;
+        width: 90%;
+        text-align: center;
+        @include text();
+        &>* {
+            flex-basis: 100%;
+        }
+    }
+    .sun_position {
+        margin-top: 1rem;
         border: 1px solid;
         display: flex;
         width: 90%;
@@ -30,9 +49,6 @@
         &>* {
             flex-basis: 100%;
         }
-        .wind-speed {
-            margin-left: auto;
-            border: 1px solid;
-        }
+        @include text();
     }
 }
