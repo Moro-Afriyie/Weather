@@ -22,11 +22,17 @@
     }
     .temperature__definition {
         flex-grow: 1;
-        margin: 1rem 3rem;
+        margin: 1rem 1rem;
         border: 1px solid;
         display: flex;
+        width: 90%;
+        text-align: center;
+        &>* {
+            flex-basis: 100%;
+        }
         .wind-speed {
             margin-left: auto;
+            border: 1px solid;
         }
     }
 }
