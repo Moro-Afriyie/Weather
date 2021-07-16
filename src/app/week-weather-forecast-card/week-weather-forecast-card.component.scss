@@ -6,7 +6,7 @@
     grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
     .card {
         display: flex;
-        gap: 0.7rem;
+        gap: 1rem;
         border-radius: 5px;
         padding: 1rem 0rem;
         flex-direction: column;
@@ -16,6 +16,9 @@
         box-shadow: -1px 0px 30px 0px rgba(0, 0, 0, 0.15);
         img {
             width: 5rem;
+        }
+        .humidity {
+            text-align: center;
         }
     }
 }
