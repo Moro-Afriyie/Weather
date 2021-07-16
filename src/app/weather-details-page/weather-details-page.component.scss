@@ -15,6 +15,12 @@
     }
 }
 
+.weather-title {
+    @media screen and (max-width: 400px) {
+        font-size: 1.6rem;
+    }
+}
+
 .weather-heading {
     display: flex;
     flex-direction: column;
@@ -22,6 +28,14 @@
     align-items: center;
     span {
         color: #ef2626;
+    }
+    @media screen and (max-width: 400px) {
+        .weather-title {
+            font-size: 1.6rem;
+        }
+        .weather-date {
+            font-size: 1rem;
+        }
     }
 }
 
@@ -35,7 +49,8 @@
     gap: 2rem;
     grid-template-areas: "temperature chart" "weekChart weekChart";
     @media screen and (max-width: 400px) {
-        grid-template-rows: 1fr 1fr 2.5fr;
+        // grid-template-rows: 1fr 1fr 2.5fr;
+        grid-template-rows: 0.5fr 1fr 3fr;
         grid-template-columns: 1fr;
         grid-template-areas: "temperature" "chart" "weekChart";
     }
