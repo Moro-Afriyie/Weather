@@ -6,7 +6,7 @@
     .value {
         font-size: 1.2rem;
     }
-    @media screen and (max-width: 400px) {
+    @media screen and (max-width: 500px) {
         .title {
             font-size: 1.2rem;
         }
@@ -18,7 +18,7 @@
 
 .temperature-container {
     padding: 1rem;
-    @media screen and (max-width: 400px) {
+    @media screen and (max-width: 500px) {
         margin: 1.5rem 0rem;
     }
     .temperature-state {
@@ -36,7 +36,7 @@
             font-size: 6rem;
             font-family: cursive;
         }
-        @media screen and (max-width: 400px) {
+        @media screen and (max-width: 500px) {
             img {
                 width: 6rem;
             }

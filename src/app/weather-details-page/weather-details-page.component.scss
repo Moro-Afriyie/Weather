@@ -10,7 +10,7 @@
     @media screen and (max-width: 800px) {
         margin: 2rem 1rem;
     }
-    @media screen and (max-width: 400px) {
+    @media screen and (max-width: 500px) {
         margin: 2rem 0.5rem;
     }
     @media screen and (max-width: 350px) {
@@ -28,7 +28,7 @@
     span {
         color: #ef2626;
     }
-    @media screen and (max-width: 400px) {
+    @media screen and (max-width: 500px) {
         h1 {
             font-size: 1.6rem;
         }
@@ -55,7 +55,7 @@
         grid-template-columns: 1fr;
         grid-template-areas: "temperature" "chart" "weekChart";
     }
-    @media screen and (max-width: 400px) {
+    @media screen and (max-width: 500px) {
         grid-template-rows: 0.5fr 1fr 3fr;
         grid-template-columns: 1fr;
         grid-template-areas: "temperature" "chart" "weekChart";
