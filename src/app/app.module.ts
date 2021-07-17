@@ -12,6 +12,7 @@ import { FormsModule } from '@angular/forms';
 import { TemperatureDetailsCardComponent } from './temperature-details-card/temperature-details-card.component';
 import { HttpClientModule, HTTP_INTERCEPTORS } from '@angular/common/http';
 import { LoaderInterceptor } from 'src/interceptors/loading.interceptor';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 @NgModule({
   declarations: [
     AppComponent,
@@ -26,6 +27,7 @@ import { LoaderInterceptor } from 'src/interceptors/loading.interceptor';
     BrowserModule,
     AppRoutingModule,
     FormsModule,
+    BrowserAnimationsModule,
   ],
   providers: [{ provide: HTTP_INTERCEPTORS, useClass: LoaderInterceptor, multi: true }],
   bootstrap: [AppComponent]
