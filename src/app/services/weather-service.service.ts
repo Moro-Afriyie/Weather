@@ -19,11 +19,13 @@ export class WeatherServiceService {
   
   //get 5 days weather forecast with 3 hours interval
   getFiveDaysWeatherForecast(city: string) {
-    return this.http.get(`${this.URL}/forecast?q=${city}&appid=${this.APIkey}`)
+    return this.http.get(`${this.URL}/forecast?q=${city}&exclude=minutely,hourly,alerts&appid=${this.APIkey}`)
   }
 
   //get 30 days climate forecast 
   getClimateForecast(city: string) {
     return this.http.get(`${this.URL}/climate?q=${city}&appid=${this.APIkey}`)
   }
+
+  
 }
