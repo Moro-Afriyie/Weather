@@ -23,7 +23,7 @@ export class WeatherServiceService {
   }
 
   //get 30 days climate forecast 
-  getclimateForecast(city: string) {
+  getClimateForecast(city: string) {
     return this.http.get(`${this.URL}/climate?q=${city}&appid=${this.APIkey}`)
   }
 }
