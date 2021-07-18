@@ -13,7 +13,12 @@ export class WeatherServiceService {
 
 
   // get the current weather based on the city
-  getCurrentWeather(city) {
+  getCurrentWeather(city: string) {
     return this.http.get(`${this.URL}/weather?q=${city}&appid=${this.APIkey}`);
+  }
+  
+  //get 5 days weather forecast with 3 hours interval
+  getFiveDaysWeatherForecast(city: string) {
+    return this.http.get(`${this.URL}/forecast?q=${city}&appid=${this.APIkey}`)
   }
 }
