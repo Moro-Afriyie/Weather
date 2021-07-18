@@ -21,4 +21,9 @@ export class WeatherServiceService {
   getFiveDaysWeatherForecast(city: string) {
     return this.http.get(`${this.URL}/forecast?q=${city}&appid=${this.APIkey}`)
   }
+
+  //get 30 days climate forecast 
+  getclimateForecast(city: string) {
+    return this.http.get(`${this.URL}/climate?q=${city}&appid=${this.APIkey}`)
+  }
 }
