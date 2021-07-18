@@ -1,6 +1,8 @@
+import { WeatherService } from './../weather.service';
 import { Component, OnInit } from '@angular/core';
 import {ThemePalette} from '@angular/material/core';
 import {ProgressSpinnerMode} from '@angular/material/progress-spinner';
+
 
 @Component({
   selector: 'app-temperature-details-card',
@@ -11,7 +13,7 @@ export class TemperatureDetailsCardComponent implements OnInit {
   color: ThemePalette = 'primary';
   mode: ProgressSpinnerMode = 'determinate';
   value = 100;
-  constructor() { }
+  constructor(private weatherService: WeatherService ) { }
 
   ngOnInit(): void {
   }
