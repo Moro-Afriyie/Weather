@@ -1,4 +1,4 @@
-import { WeatherService } from './../weather.service';
+import { WeatherService } from './../services/weather.service';
 import { Component, OnInit } from '@angular/core';
 import {ThemePalette} from '@angular/material/core';
 import {ProgressSpinnerMode} from '@angular/material/progress-spinner';
@@ -13,9 +13,12 @@ export class TemperatureDetailsCardComponent implements OnInit {
   color: ThemePalette = 'primary';
   mode: ProgressSpinnerMode = 'determinate';
   value = 100;
-  constructor(private weatherService: WeatherService ) { }
+  constructor( private weatherService: WeatherService) { }
 
   ngOnInit(): void {
+    this.weatherService.getFiveDaysWeatherForecast("london")
+    .subscribe(res => console.log(res));
+   
   }
 
 }
