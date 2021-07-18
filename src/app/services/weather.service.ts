@@ -6,7 +6,7 @@ import { Injectable } from '@angular/core';
 })
 export class WeatherService {
 
-  APIkey:string = 'b23e6a0dcfmsh4ad3478f38e8989p1bea08jsn7bcc14a25fc6';
+  APIkey:string = 'my api key';
   URL:string = 'https://community-open-weather-map.p.rapidapi.com';
 
   constructor(private http: HttpClient) { }
