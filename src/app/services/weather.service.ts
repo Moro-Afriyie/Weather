@@ -7,6 +7,7 @@ import { Injectable } from '@angular/core';
 })
 export class WeatherService {
 
+  // get Api key
   APIkey:string = environment.APIkey;
   URL:string = 'http://api.openweathermap.org/data/2.5';
 
