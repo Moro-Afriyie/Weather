@@ -16,7 +16,7 @@ export class TemperatureDetailsCardComponent implements OnInit {
   constructor( private weatherService: WeatherService) { }
 
   ngOnInit(): void {
-    this.weatherService.getFiveDaysWeatherForecast("london")
+    this.weatherService.getCurrentWeather("london")
     .subscribe(res => console.log(res));
    
   }
