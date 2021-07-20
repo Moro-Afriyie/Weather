@@ -1,3 +1,4 @@
+import { environment } from './../../environments/environment';
 import { HttpClient } from '@angular/common/http';
 import { Injectable } from '@angular/core';
 
@@ -6,8 +7,8 @@ import { Injectable } from '@angular/core';
 })
 export class WeatherService {
 
-  APIkey:string = 'my api key';
-  URL:string = 'https://community-open-weather-map.p.rapidapi.com';
+  APIkey:string = environment.APIkey;
+  URL:string = 'http://api.openweathermap.org/data/2.5';
 
   constructor(private http: HttpClient) { }
 
