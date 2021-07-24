@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { WeatherService } from '../services/weather.service';
 
 @Component({
   selector: 'app-week-weather-forecast-card',
@@ -7,9 +8,11 @@ import { Component, OnInit } from '@angular/core';
 })
 export class WeekWeatherForecastCardComponent implements OnInit {
 
-  constructor() { }
+  constructor(private weatherService: WeatherService) { }
 
   ngOnInit(): void {
+   this.weatherService.getFiveDaysWeatherForecast("london")
+    .subscribe(res => console.log("Five days forecast: ",res));
   }
 
 }

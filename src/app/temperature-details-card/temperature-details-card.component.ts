@@ -13,14 +13,35 @@ export class TemperatureDetailsCardComponent implements OnInit {
   color: ThemePalette = 'primary';
   mode: ProgressSpinnerMode = 'determinate';
   value = 100;
+  //main
+  feelsLike: number;
+  humidity: number;
+  pressure: number;
+  temperature: number;
+  mininumTemperature: number;
+  maximumTemperature: number;
+  //sys
+  sunRise: number;
+  sunSet: number;
+  visibility: number;
+  //weather
+  weatherDescription: string;
+  weatherIcon: string;
+  windSpeed: number;
+  
+
   constructor( private weatherService: WeatherService) { }
 
   ngOnInit(): void {
-    // this.weatherService.getCurrentWeather("london")
-    // .subscribe(res => console.log("current weather + ",res));
-    // this.weatherService.getFiveDaysWeatherForecast("london")
-    // .subscribe(res => console.log("Five days forecast: ",res));
-   
+    this.weatherService.getCurrentWeather("london")
+    .subscribe(res => console.log("current weather + ",res));
+//    feels_like: 292.03
+// humidity: 85
+// pressure: 1008
+// temp: 291.88
+// temp_max: 293.21
+// temp_min: 289.46
+
   }
 
 }
