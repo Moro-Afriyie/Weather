@@ -33,8 +33,10 @@ export class TemperatureDetailsCardComponent implements OnInit {
   constructor( private weatherService: WeatherService) { }
 
   ngOnInit(): void {
-    this.weatherService.getCurrentWeather("london")
-    .subscribe(res => console.log("current weather + ",res));
+    this.weatherService.getCurrentWeather("Kumasi")
+    .subscribe(res => {
+      console.log("current weather + ",res);
+    });
 //    feels_like: 292.03
 // humidity: 85
 // pressure: 1008

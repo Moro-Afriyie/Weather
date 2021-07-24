@@ -11,7 +11,7 @@ export class WeekWeatherForecastCardComponent implements OnInit {
   constructor(private weatherService: WeatherService) { }
 
   ngOnInit(): void {
-   this.weatherService.getFiveDaysWeatherForecast("london")
+   this.weatherService.getFiveDaysWeatherForecast("Kumasi")
     .subscribe(res => console.log("Five days forecast: ",res));
   }
 
