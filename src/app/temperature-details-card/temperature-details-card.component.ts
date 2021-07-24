@@ -37,24 +37,15 @@ export class TemperatureDetailsCardComponent implements OnInit {
     .subscribe(res => {
       this.getWeatherDetails(res);
     });
-//    feels_like: 292.03
-// humidity: 85
-// pressure: 1008
-// temp: 291.88
-// temp_max: 293.21
-// temp_min: 289.46
   }
   getWeatherDetails(weather:any){
     console.log("current weather + ", weather);
     this.feelsLike = (weather.main.feels_like-273.15).toFixed(0);
-    console.log(this.feelsLike)
-    //main
-  // feelsLike: number;
-  // humidity: number;
-  // pressure: number;
-  // temperature: number;
-  // mininumTemperature: number;
-  // maximumTemperature: number;
+    this.temperature = (weather.main.temp-273.15).toFixed(0);
+    this.mininumTemperature = (weather.temp_min-273.15).toFixed(0);
+    this.maximumTemperature = (weather.temp_max-273.15).toFixed(0);
+    this.pressure = weather.main.pressure;
+    this.humidity = weather.main.humidity;
   }
 
 }
