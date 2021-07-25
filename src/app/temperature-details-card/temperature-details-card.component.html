@@ -2,34 +2,34 @@
     <div class="temperature-state">
         <div class="temperature">
             <img src="../../assets/cloudy.png" alt="weather-state">
-            <h1>+23<sup>o</sup></h1>
+            <h1> {{this.temperature}}<sup>o</sup>C</h1>
         </div>
         <div class="min-max">
-            <h3>23<sup>o</sup> / 23<sup>o</sup></h3>
+            <h3>{{this.maximumTemperature}}<sup>o</sup> / {{this.minimumTemperature}}<sup>o</sup></h3>
         </div>
         <div class=".feels-like">
-            <h3>Feels Like: 23<sup>o</sup></h3>
+            <h3>Feels Like: {{this.feelsLike}}<sup>o</sup></h3>
         </div>
 
-        <h2>Sunny</h2>
+        <h2>{{this.weatherDescription| titlecase }}</h2>
         <div class="temperature__definition">
             <div class="humidity">
                 <p class="title">humidity</p>
-                <p class="value">45%</p>
+                <p class="value">{{this.humidity}}%</p>
             </div>
             <div class="wind-speed">
                 <p class="title">wind speed</p>
-                <p class="value">192km/h</p>
+                <p class="value">{{this.windSpeed}} km/hr</p>
             </div>
         </div>
         <div class="sun_position">
             <div class="sunrise">
                 <p class="title">Sunrise</p>
-                <p class="value">6:00am</p>
+                <p class="value">{{this.sunRise}}</p>
             </div>
             <div class="sunset">
                 <p class="title">Sunset</p>
-                <p class="value">5:00pm</p>
+                <p class="value">{{this.sunSet}}</p>
             </div>
         </div>
     </div>
